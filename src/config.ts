@@ -13,7 +13,7 @@ class Config {
   public REDIS_HOST: string | undefined;
 
   private readonly DEFAULT_DATABASE_URL =
-    'mongodb+srv://viteras007:victore1r2t3@cluster0.nrlxa1w.mongodb.net/chattyapp-backend';
+    'mongodb+srv://<username>:<password>@cluster0.nrlxa1w.mongodb.net/chattyapp-backend';
 
   constructor() {
     this.DATABASE_URL = process.env.DATABASE_URL || this.DEFAULT_DATABASE_URL;
